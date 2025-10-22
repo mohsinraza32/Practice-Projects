@@ -4,43 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DayZee</title>
+    <link rel="stylesheet" href="/js/slick-theme.css" />
+    <link rel="stylesheet" href="/js/slick.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
   </head>
   <body>
-    <div class="hero-bg">
-      <div class="container">
-        <header class="header">
-          <nav class="navbar">
-            <div class="logo">
-              <img src="./images/Layer_1.png" alt="logo" />
-            </div>
-            <div class="nav-list">
-              <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">LIVE STOCK</a></li>
-                <li><a href="#">RENEWABLE ENERGY</a></li>
-                <li><a href="#">AGRICULTURE</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">CAREER</a></li>
-                <li><a href="#">CONTACT US</a></li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+    <header class="header">
+      <div class="logo">
+        <img src="./images/Layer_1.png" alt="logo" />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">LIVE STOCK</a></li>
+          <li><a href="#">RENEWABLE ENERGY</a></li>
+          <li><a href="#">AGRICULTURE</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">CAREER</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- hero section -->
-        <section class="hero-section">
-          <div class="hero-body">
+    <!-- hero section -->
+    <section class="hero-section">
+      <div class="banner-slider">
+        <img src="./images/powering-the-future-sustainably.jpg" alt="powering-the-future-sustainably-img" />
+        <div class="hero-body">
+            <div class="container">
             <span>RENEWABLE ENERGY</span>
             <h1>POWERING THE <span>FUTURE SUSTAINABLY</span></h1>
           </div>
-        </section>
+        </div>
       </div>
-    </div>
+      <div class="banner-slider">
+        <img src="./images/about-us.jpg" alt="about-us-img" />
+        <div class="hero-body">
+            <div class="container">
+            <span>RENEWABLE ENERGY</span>
+            <h1>POWERING THE <span>FUTURE SUSTAINABLY</span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="banner-slider">
+         <img src="./images/image-gallery.jpg" alt="image-gallery" />
+        <div class="hero-body">
+            <div class="container">
+            <span>RENEWABLE ENERGY</span>
+            <h1>POWERING THE <span>FUTURE SUSTAINABLY</span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="banner-slider">
+         <img src="./images/contact-us.jpg" alt="contact-us" />
+        <div class="hero-body">
+            <div class="container">
+            <span>RENEWABLE ENERGY</span>
+            <h1>POWERING THE <span>FUTURE SUSTAINABLY</span></h1>
+          </div>
+        </div>
+      </div>
+        <div class="banner-slider">
+         <img src="./images/career-page.jpg" alt="career-page-img" />
+        <div class="hero-body">
+            <div class="container">
+            <span>RENEWABLE ENERGY</span>
+            <h1>POWERING THE <span>FUTURE SUSTAINABLY</span></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- livestock section -->
 
     <section class="livestock-section container">
@@ -176,47 +215,49 @@
               <div class="input-flex">
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" />
+              </div>
+              <div class="input-flex">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="input-flex">
+                <label for="company_name">Company Name</label>
+                <input type="text" id="company_name" />
+              </div>
+              <div>
+                <label for="country">Country</label>
+                <div class="select-country">
+                  <span>Select Country Name</span>
+                  <img src="./images/Vector (2).png" alt="vector2-img" />
                 </div>
-                <div class="input-flex">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" />
-                </div>
-                <div class="input-flex">
-                  <label for="company_name">Company Name</label>
-                  <input type="text" id="company_name" />
-                </div>
-                <div>
-                  <label for="country">Country</label>
-                  <div class="select-country">
-                    <span>Select Country Name</span>
-                    <img src="./images/Vector (2).png" alt="vector2-img">
-                  </div>
-                </div>
+              </div>
             </div>
-              <div class="form-right">
-                <div class="input-flex">
-                  <label for="last_name">First Name</label>
-                  <input type="text" id="last_name" />
-                </div>
-                <div class="input-flex">
-                  <label for="mobile_no">Email</label>
-                  <input type="number" id="mobile_no" />
-                </div>
-                <div>
-                  <label for="city_name">City</label>
+            <div class="form-right">
+              <div class="input-flex">
+                <label for="last_name">First Name</label>
+                <input type="text" id="last_name" />
+              </div>
+              <div class="input-flex">
+                <label for="mobile_no">Email</label>
+                <input type="number" id="mobile_no" />
+              </div>
+              <div>
+                <label for="city_name">City</label>
                 <div class="select">
                   <span>Select City Name</span>
-                  <img src="./images/Vector (2).png" alt="vector2-img">
+                  <img src="./images/Vector (2).png" alt="vector2-img" />
                 </div>
-                </div>
+              </div>
               <div class="input-flex">
                 <label for="interest">Company Name</label>
                 <input type="text" id="interest" />
-                </div>
+              </div>
             </div>
           </form>
         </div>
       </div>
     </section>
+    <script src="/js/slick.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
