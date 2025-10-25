@@ -428,6 +428,8 @@ form {
   height: 56px;
   background-color: #0a3d0e08;
   border: none;
+  padding-left: 10px;
+  font-size: 18px;
 }
 .select {
   border: 1px solid black;
